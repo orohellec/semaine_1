@@ -1,0 +1,148 @@
+html
+{
+	height: 100%;
+	font-family: arial, sans-serif;
+	font-size: 13px;
+}
+
+body
+{
+	min-height: 100%;
+	margin: 0;
+	position: relative;
+}
+
+nav
+{
+	display: flex;
+	justify-content: flex-end;
+	text-align: center;
+}
+
+nav, section
+{
+	padding: 10px 20px 10px 20px;
+}
+
+input, button
+{
+	font-size: 13px;
+}
+
+.nav_class
+{
+	margin-left: 20px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+#sign_in
+{
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+}
+
+#search
+{
+	text-align: center;
+	margin-top: 170px;
+}
+
+#search_bar
+{
+	width: 550px;
+	height: 35px;
+	margin: 20px 20px 20px 20px;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#search_bar:target
+{
+	box-shadow: 0px 3px 8px silver;
+}
+
+#surprise
+{
+	display: flex;
+	justify-content: center;
+	padding: 10px 0px;
+}
+
+#search_button, #lucky_button
+{
+	height: 36px;
+	font-weight: bold;
+	background-color: #F5F5F5;
+	padding: 0px;
+	border: none;
+	color: grey;
+}
+
+#search_button:hover, #lucky_button:hover
+{
+	color: black;
+	border: 1px solid silver;
+}
+
+#search_button
+{
+	width: 125px;
+	margin-right: 10px;
+}
+
+#lucky_button
+{
+	width: 142px;
+}
+
+footer
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #F2F2F2;
+	border: 1px solid silver;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 0px 20px 10px 20px;
+	color: grey;
+}
+
+#business
+{
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid silver;
+	padding-top: 10px;
+}
+
+.business1_class
+{
+	margin-left: 0px;
+	margin-right: 20px;
+	color: grey;
+}
+
+.business2_class
+{
+	margin-right: 0px;
+	margin-left: 20px;
+	color: grey;
+}
+
+.business1_class:hover, .business2_class:hover
+{
+	text-decoration: underline;
+}
+
+a
+{
+	color: black;
+	text-decoration: none;
+}
