@@ -33,29 +33,27 @@ MENU["BIERE"] = BIERE
 MENU["PRIX"] = PRIX
 
 def weight_watchers(meal)
-  if meal["Lipides"]  #to exclude element :Prix in MENU
     result = meal["Lipides"] * @CALORIES["Lipides"] +
              meal["Glucides"] * @CALORIES["Glucides"] +
              meal["Protéines"] * @CALORIES["Protéines"]
-    puts "Il y a #{result} calories dans ce plat"
-  end
+    puts "#{result} calories"
+    return result
 end
 
 def meal_weight_watchers(menu)
+  sum_calories = 0
   menu.values.each do |test|
     if menu.key(test) != "PRIX"
-     print "#{menu.key(test)} "
-     weight_watchers(test)
+      print "#{menu.key(test)}: "
+      sum_calories += weight_watchers(test)
     end
-
   end
+  puts "\nTotal calories: #{sum_calories}"
 end
 
 def meal_price(menu)
   puts "Le prix du menu: #{menu["PRIX"].values.sum} €"
 end
 
-weight_watchers(WELSH)
-puts MENU
-meal_price(MENU)
 meal_weight_watchers(MENU)
+meal_price(MENU)
